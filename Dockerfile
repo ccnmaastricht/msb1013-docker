@@ -1,6 +1,4 @@
 ARG PYTHON_VERSION=3.10
-
-# install base image (miniconda)
 FROM continuumio/miniconda3
 
 LABEL image='MSB1013_jupyter'
