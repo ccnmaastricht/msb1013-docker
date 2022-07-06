@@ -6,6 +6,8 @@ LABEL version="0.1"
 LABEL author="Mario Senden"
 LABEL email="mario.senden@maastrichtuniversity.nl"
 
+RUN apt-get -y install git
+
 # install jupyterlab plus nb_conda_kernels to enable
 # several conda environments
 RUN conda install python=$PYTHON_VERSION \
@@ -16,6 +18,7 @@ RUN conda install python=$PYTHON_VERSION \
                   matplotlib \
                   seaborn
 RUN pip install   jupyterlab_latex \
+		  jupyterlab-git \
                   jupyterlab-github
 
 # create environment for NEST simulator
