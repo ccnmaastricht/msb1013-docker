@@ -35,4 +35,5 @@ RUN conda create --name neuron_env python=$PYTHON_VERSION \
 SHELL ["conda", "run", "-n", "neuron_env", "/bin/bash", "-c"]
 RUN pip install neuron
 
-CMD ["jupyter-lab","--ip=0.0.0.0","--port=8888", "--no-browser","--allow-root"]
+CMD ["jupyter-lab","--ip=0.0.0.0", "--no-browser","--allow-root"]
+EXPOSE 8888
