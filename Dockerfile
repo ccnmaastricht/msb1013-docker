@@ -4,7 +4,7 @@ FROM continuumio/miniconda3
 LABEL author="Mario Senden"
 LABEL email="mario.senden@maastrichtuniversity.nl"
 LABEL image="MSB1013_jupyter"
-LABEL version="0.1"
+LABEL version="2022"
 
 RUN mkdir -p /home/computer_classes
 RUN apt-get -y install git
